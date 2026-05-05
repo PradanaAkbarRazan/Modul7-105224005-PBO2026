@@ -22,4 +22,17 @@ public class Main {
             }
         }
     }
+
+
+
+    // --- NOMOR 5: ANALISIS DAN PERBAIKAN ERROR ---
+/*
+   PENJELASAN: Baris 'alat1.aturKecerahan(75, "Putih")' error (cannot find symbol) karena 
+   variabel 'alat1' menggunakan referensi PerangkatPintar yang tidak memiliki metode tersebut.
+   PERBAIKAN: Menggunakan 'instanceof' untuk mengecek tipe dan 'Downcasting' ke LampuPintar 
+   agar metode aturKecerahan dapat diakses oleh Compiler.
+*/
+//if (alat1 instanceof LampuPintar) {
+   // ((LampuPintar) alat1).aturKecerahan(75, "Putih");
+// }
 }
